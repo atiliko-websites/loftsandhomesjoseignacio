@@ -18,7 +18,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-slate-800 flex flex-col font-sans selection:bg-terracotta-500 selection:text-white">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#FAF8F5] text-slate-800 flex flex-col font-sans selection:bg-terracotta-500 selection:text-white">
       {/* Top Navbar */}
       <Navbar />
 

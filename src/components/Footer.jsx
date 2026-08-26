@@ -13,7 +13,7 @@ export default function Footer({ onSelectCategory }) {
   };
 
   return (
-    <footer className="bg-ocean-950 text-white pt-20 pb-12 border-t border-white/10">
+    <footer className="bg-ocean-950 text-white pt-16 sm:pt-20 pb-12 border-t border-white/10 w-full max-w-full overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Grid */}

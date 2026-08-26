@@ -6,7 +6,7 @@ export default function PlacesGuide() {
   const [selectedPlace, setSelectedPlace] = useState(PLACES[0]);
 
   return (
-    <section id="el-lugar" className="py-24 bg-ocean-950 text-white relative overflow-hidden">
+    <section id="el-lugar" className="py-16 sm:py-24 bg-ocean-950 text-white relative overflow-hidden w-full max-w-full">
       {/* Background ambient glow */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-terracotta-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-ocean-500/10 rounded-full blur-3xl pointer-events-none" />
