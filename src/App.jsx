@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ConceptSection from './components/ConceptSection';
+import VideoReelsSection from './components/VideoReelsSection';
 import PropertyCatalog from './components/PropertyCatalog';
 import PropertyDetailModal from './components/PropertyDetailModal';
 import PlacesGuide from './components/PlacesGuide';
@@ -27,6 +28,11 @@ export default function App() {
 
       {/* Sustainable Concept & Pillars */}
       <ConceptSection />
+
+      {/* Video Walkthroughs / Reels Section */}
+      <VideoReelsSection 
+        onSelectProperty={(property) => setSelectedProperty(property)} 
+      />
 
       {/* Property Catalog & Filters */}
       <PropertyCatalog 

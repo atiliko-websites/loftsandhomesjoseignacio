@@ -65,6 +65,18 @@ export default function ConceptSection() {
           })}
         </div>
 
+        {/* Visual Callout to Video Tours */}
+        <div className="mt-12 text-center">
+          <a
+            href="#recorridos"
+            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-ocean-950 hover:bg-terracotta-600 text-white text-xs sm:text-sm font-semibold tracking-wide shadow-md transition-all hover:scale-105"
+          >
+            <Sparkles className="w-4 h-4 text-terracotta-400" />
+            <span>Mirá los recorridos en video de los espacios</span>
+            <span>→</span>
+          </a>
+        </div>
+
       </div>
     </section>
   );

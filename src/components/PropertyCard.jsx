@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Maximize2, Bed, Bath, ArrowRight, Phone, Sparkles, ChevronLeft, ChevronRight, Check } from 'lucide-react';
+import { Users, Maximize2, Bed, Bath, ArrowRight, Phone, Sparkles, ChevronLeft, ChevronRight, Check, Video } from 'lucide-react';
 
 export default function PropertyCard({ property, onSelect }) {
   const [currentImageIdx, setCurrentImageIdx] = useState(0);
@@ -36,11 +36,17 @@ export default function PropertyCard({ property, onSelect }) {
           loading="lazy"
         />
 
-        {/* Category Badge */}
-        <div className="absolute top-3 sm:top-4 left-3 sm:left-4 z-10">
+        {/* Category Badge & Video Badge */}
+        <div className="absolute top-3 sm:top-4 left-3 sm:left-4 z-10 flex flex-col gap-1.5 items-start">
           <span className="px-2.5 sm:px-3 py-1 rounded-full bg-ocean-950/80 backdrop-blur-md text-white text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider">
             {property.category}
           </span>
+          {property.video && (
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-terracotta-600/90 backdrop-blur-md text-white text-[10px] sm:text-[11px] font-semibold tracking-wide shadow-md">
+              <Video className="w-3 h-3" />
+              Video Tour
+            </span>
+          )}
         </div>
 
         {/* Gallery count */}

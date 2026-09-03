@@ -21,6 +21,12 @@ export const PROPERTIES = [
       "Estacionamiento"
     ],
     "featuredImage": "/images/properties/cdl-1/cdl-1_01.jpg",
+    "video": {
+        "src": "/videos/cdl-1.mp4",
+        "poster": "/videos/posters/cdl-1.jpg",
+        "duration": "58s",
+        "title": "Video Tour CDL 1"
+    },
     "gallery": [
       "/images/properties/cdl-1/cdl-1_01.jpg",
       "/images/properties/cdl-1/cdl-1_02.jpg",
@@ -65,6 +71,12 @@ export const PROPERTIES = [
       "Estacionamiento"
     ],
     "featuredImage": "/images/properties/cdl-2/cdl-2_01.jpg",
+    "video": {
+        "src": "/videos/cdl-2.mp4",
+        "poster": "/videos/posters/cdl-2.jpg",
+        "duration": "55s",
+        "title": "Video Tour CDL 2"
+    },
     "gallery": [
       "/images/properties/cdl-2/cdl-2_01.jpg",
       "/images/properties/cdl-2/cdl-2_02.jpg",
@@ -109,6 +121,12 @@ export const PROPERTIES = [
       "Estacionamiento"
     ],
     "featuredImage": "/images/properties/cdl-3/cdl-3_01.jpg",
+    "video": {
+        "src": "/videos/cdl-3.mp4",
+        "poster": "/videos/posters/cdl-3.jpg",
+        "duration": "59s",
+        "title": "Video Tour CDL 3"
+    },
     "gallery": [
       "/images/properties/cdl-3/cdl-3_01.jpg",
       "/images/properties/cdl-3/cdl-3_02.jpg",
@@ -148,6 +166,12 @@ export const PROPERTIES = [
       "Estacionamiento"
     ],
     "featuredImage": "/images/properties/cdl-4/cdl-4_01.jpg",
+    "video": {
+        "src": "/videos/cdl-4.mp4",
+        "poster": "/videos/posters/cdl-4.jpg",
+        "duration": "53s",
+        "title": "Video Tour CDL 4"
+    },
     "gallery": [
       "/images/properties/cdl-4/cdl-4_01.jpg",
       "/images/properties/cdl-4/cdl-4_02.jpg",
@@ -189,6 +213,12 @@ export const PROPERTIES = [
       "A metros de la playa"
     ],
     "featuredImage": "/images/properties/beach-design-one/beach-design-one_01.jpg",
+    "video": {
+        "src": "/videos/beach-design-one.mp4",
+        "poster": "/videos/posters/beach-design-one.jpg",
+        "duration": "1m 29s",
+        "title": "Video Tour Beach Design One"
+    },
     "gallery": [
       "/images/properties/beach-design-one/beach-design-one_01.jpg",
       "/images/properties/beach-design-one/beach-design-one_02.jpg",
@@ -235,6 +265,12 @@ export const PROPERTIES = [
       "A metros de la playa"
     ],
     "featuredImage": "/images/properties/beach-design-two/beach-design-two_01.jpg",
+    "video": {
+        "src": "/videos/beach-design-two.mp4",
+        "poster": "/videos/posters/beach-design-two.jpg",
+        "duration": "1m 22s",
+        "title": "Video Tour Beach Design Two"
+    },
     "gallery": [
       "/images/properties/beach-design-two/beach-design-two_01.jpg",
       "/images/properties/beach-design-two/beach-design-two_02.jpg",
@@ -362,6 +398,12 @@ export const PROPERTIES = [
       "Estacionamiento"
     ],
     "featuredImage": "/images/properties/cubo/cubo_01.jpg",
+    "video": {
+        "src": "/videos/cubo.mp4",
+        "poster": "/videos/posters/cubo.jpg",
+        "duration": "1m 12s",
+        "title": "Video Tour Cubo"
+    },
     "gallery": [
       "/images/properties/cubo/cubo_01.jpg",
       "/images/properties/cubo/cubo_02.jpg",
@@ -447,6 +489,20 @@ export const PROPERTIES = [
       "Jardín entre el bosque"
     ],
     "featuredImage": "/images/properties/tizon-woodhouse/tizon-woodhouse_01.jpg",
+    "video": {
+        "src": "/videos/tizon-woodhouse.mp4",
+        "poster": "/videos/posters/tizon-woodhouse.jpg",
+        "duration": "1m 36s",
+        "title": "Video Tour Tizón Woodhouse",
+        "extraVideos": [
+            {
+                "src": "/videos/tizon-exterior.mp4",
+                "poster": "/videos/posters/tizon-exterior.jpg",
+                "duration": "1m 05s",
+                "title": "Exterior & Bosque"
+            }
+        ]
+    },
     "gallery": [
       "/images/properties/tizon-woodhouse/tizon-woodhouse_01.jpg",
       "/images/properties/tizon-woodhouse/tizon-woodhouse_02.jpg",
@@ -508,6 +564,12 @@ export const PROPERTIES = [
       "Jardín entre el bosque"
     ],
     "featuredImage": "/images/properties/yacu/yacu_01.jpg",
+    "video": {
+        "src": "/videos/yacu.mp4",
+        "poster": "/videos/posters/yacu.jpg",
+        "duration": "1m 02s",
+        "title": "Video Tour Yacu"
+    },
     "gallery": [
       "/images/properties/yacu/yacu_01.jpg",
       "/images/properties/yacu/yacu_02.jpg",
@@ -555,6 +617,12 @@ export const PROPERTIES = [
       "Jardín entre el bosque"
     ],
     "featuredImage": "/images/properties/zulu/zulu_01.jpg",
+    "video": {
+        "src": "/videos/zulu.mp4",
+        "poster": "/videos/posters/zulu.jpg",
+        "duration": "1m 12s",
+        "title": "Video Tour Zulu"
+    },
     "gallery": [
       "/images/properties/zulu/zulu_01.jpg",
       "/images/properties/zulu/zulu_02.jpg",
@@ -582,3 +650,105 @@ export const PROPERTIES = [
 ];
 
 export const CATEGORIES = ["Todos", "Container Lofts", "Beach Houses", "Woodhouses & Casas", "Lofts"];
+
+export const VIDEO_TOURS = [
+  {
+    id: "beach-design-one",
+    propertyName: "Beach Design One",
+    tagline: "Frente a la laguna & el mar",
+    category: "Beach Houses",
+    videoSrc: "/videos/beach-design-one.mp4",
+    poster: "/videos/posters/beach-design-one.jpg",
+    duration: "1m 29s"
+  },
+  {
+    id: "beach-design-two",
+    propertyName: "Beach Design Two",
+    tagline: "Deck con vista a la laguna",
+    category: "Beach Houses",
+    videoSrc: "/videos/beach-design-two.mp4",
+    poster: "/videos/posters/beach-design-two.jpg",
+    duration: "1m 22s"
+  },
+  {
+    id: "cdl-1",
+    propertyName: "CDL 1",
+    tagline: "Loft en contenedor sustentable",
+    category: "Container Lofts",
+    videoSrc: "/videos/cdl-1.mp4",
+    poster: "/videos/posters/cdl-1.jpg",
+    duration: "58s"
+  },
+  {
+    id: "cdl-2",
+    propertyName: "CDL 2",
+    tagline: "Mobiliario retro restaurado & deck",
+    category: "Container Lofts",
+    videoSrc: "/videos/cdl-2.mp4",
+    poster: "/videos/posters/cdl-2.jpg",
+    duration: "55s"
+  },
+  {
+    id: "cdl-3",
+    propertyName: "CDL 3",
+    tagline: "Diseño & confort en la naturaleza",
+    category: "Container Lofts",
+    videoSrc: "/videos/cdl-3.mp4",
+    poster: "/videos/posters/cdl-3.jpg",
+    duration: "59s"
+  },
+  {
+    id: "cdl-4",
+    propertyName: "CDL 4",
+    tagline: "Espacio moderno a pasos de la playa",
+    category: "Container Lofts",
+    videoSrc: "/videos/cdl-4.mp4",
+    poster: "/videos/posters/cdl-4.jpg",
+    duration: "53s"
+  },
+  {
+    id: "exteriores-containers",
+    propertyName: "Parque & Entorno CDL",
+    tagline: "Jardín, vegetación autóctona y solarium",
+    category: "Entorno & Naturaleza",
+    videoSrc: "/videos/exteriores-containers.mp4",
+    poster: "/videos/posters/exteriores-containers.jpg",
+    duration: "56s"
+  },
+  {
+    id: "tizon-woodhouse",
+    propertyName: "Tizón Woodhouse",
+    tagline: "Casa en madera noble entre las copas",
+    category: "Woodhouses & Casas",
+    videoSrc: "/videos/tizon-woodhouse.mp4",
+    poster: "/videos/posters/tizon-woodhouse.jpg",
+    duration: "1m 36s"
+  },
+  {
+    id: "cubo",
+    propertyName: "Cubo",
+    tagline: "Diseño vanguardista y madera cálida",
+    category: "Lofts",
+    videoSrc: "/videos/cubo.mp4",
+    poster: "/videos/posters/cubo.jpg",
+    duration: "1m 12s"
+  },
+  {
+    id: "yacu",
+    propertyName: "Yacu",
+    tagline: "Refugio familiar entre los pinos",
+    category: "Woodhouses & Casas",
+    videoSrc: "/videos/yacu.mp4",
+    poster: "/videos/posters/yacu.jpg",
+    duration: "1m 02s"
+  },
+  {
+    id: "zulu",
+    propertyName: "Zulu",
+    tagline: "Amplitud y calidez para 5 personas",
+    category: "Woodhouses & Casas",
+    videoSrc: "/videos/zulu.mp4",
+    poster: "/videos/posters/zulu.jpg",
+    duration: "1m 12s"
+  }
+];

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, Compass, Home, MessageSquare, MapPin } from 'lucide-react';
+import { Menu, X, Phone, Compass, Home, MessageSquare, MapPin, Video } from 'lucide-react';
 
 export default function Navbar({ onSelectCategory, onOpenContact }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,6 +58,16 @@ export default function Navbar({ onSelectCategory, onOpenContact }) {
             }`}
           >
             Alojamientos
+          </button>
+
+          <button 
+            onClick={() => scrollTo('recorridos')}
+            className={`text-sm font-medium transition-colors hover:text-terracotta-500 flex items-center gap-1.5 ${
+              isScrolled ? 'text-slate-700' : 'text-white/90'
+            }`}
+          >
+            <span>Video Tours</span>
+            <span className="w-2 h-2 rounded-full bg-terracotta-500 animate-pulse" />
           </button>
 
           <button 
@@ -124,6 +134,17 @@ export default function Navbar({ onSelectCategory, onOpenContact }) {
           >
             <Home className="w-5 h-5 text-terracotta-500" />
             <span>Nuestras Propiedades</span>
+          </button>
+
+          <button
+            onClick={() => scrollTo('recorridos')}
+            className="flex items-center gap-3 w-full py-2 text-left font-medium text-slate-800 hover:text-terracotta-600"
+          >
+            <Video className="w-5 h-5 text-terracotta-600" />
+            <div className="flex items-center gap-2">
+              <span>Video Tours</span>
+              <span className="text-[10px] uppercase font-bold bg-terracotta-100 text-terracotta-700 px-2 py-0.5 rounded-full">Nuevo</span>
+            </div>
           </button>
           
           <button
