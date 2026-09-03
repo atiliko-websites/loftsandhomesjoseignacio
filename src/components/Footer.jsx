@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Heart, ArrowUp } from 'lucide-react';
+import { Phone, MapPin, Heart, ArrowUp } from 'lucide-react';
 import { PROPERTIES } from '../data/properties';
 
 export default function Footer({ onSelectCategory }) {
@@ -102,14 +102,15 @@ export default function Footer({ onSelectCategory }) {
                 <MapPin className="w-4 h-4 text-terracotta-400 shrink-0 mt-0.5" />
                 <span>La Juanita, José Ignacio, Maldonado, Uruguay</span>
               </div>
-              <div className="flex items-center gap-2.5">
+              <a 
+                href="https://wa.me/59894422598?text=Hola%20Ale!%20Quisiera%20consultar%20por%20los%20alojamientos."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 hover:text-white transition-colors"
+              >
                 <Phone className="w-4 h-4 text-terracotta-400 shrink-0" />
-                <span>(+598) 94 422 598</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-terracotta-400 shrink-0" />
-                <span>aledellepiane7@hotmail.com</span>
-              </div>
+                <span>WhatsApp: (+598) 94 422 598</span>
+              </a>
             </div>
           </div>
 
